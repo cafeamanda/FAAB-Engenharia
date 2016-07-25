@@ -1,0 +1,32 @@
+{
+  "name": "Faab Engenharia",
+  "authors": [
+    "cafeamanda <amandadearaujo0@gmail.com>"
+  ],
+  "description": "Site estático da Faab Engenharia, Recife-PE",
+  "main": "index.html",
+  "keywords": [
+    "Construção",
+    "Reforma",
+    "Manutenção",
+    "Linhas",
+    "Subestações",
+    "Projetos",
+    "Civis",
+    "Elétricos",
+    "Automação",
+    "Linha",
+    "Viva",
+    "Locação",
+    "de",
+    "Máquinas",
+    "Equipamentos"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0"
+  }
+}

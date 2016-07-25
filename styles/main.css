@@ -1,0 +1,20 @@
+.vcenter {
+  /* align inner elements vertically */
+  display:flex;
+  align-items: center;
+}
+#home .jumbotron {
+  height: 100vh;
+  margin-bottom:0;
+  position:relative;
+}
+#home .jumbotron .text-bottom {
+  position: absolute;
+  right:1%;
+  bottom:0;
+}
+#home .jumbotron .text-top {
+  position: absolute;
+  right:1%;
+  top:1%;
+}
