@@ -1,13 +1,39 @@
 .vcenter {
-  /* align inner elements vertically */
   display:flex;
   align-items: center;
+}
+.navbar {
+  background: white;
+  border:0;
+  padding-top:10px;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+  text-shadow: 0 0 0;
+  color: #32336b;
+}
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #32336b;
+  font-weight: bold;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+.dropdown-menu {
+  background: #32336b;
+  opacity:0.7;
+}
+.dropdown-menu li {
+  padding: 10px 0;
+}
+.dropdown-menu li a {
+  color:white;
 }
 #home .jumbotron {
   height: 100vh;
   margin-bottom:0;
   position:relative;
 }
+
 #home .jumbotron .text-bottom {
   position: absolute;
   right:1%;
@@ -17,4 +43,121 @@
   position: absolute;
   right:1%;
   top:1%;
+}
+#menuWrapper {
+  position: fixed;
+  bottom:8.5%;
+  right:8.5%;
+}
+#menuIconWrapper {
+  padding:6px 12.5px;
+  border-radius: 6px;
+  background:#eee;
+  color:#32336b;
+  font-size: 22px;
+  opacity:0.5;
+}
+#menu {
+  display:none;
+  position: absolute;
+  bottom:100%;
+  right:0;
+}
+#menu ul {
+  color:#32336b;
+  background: #eee;
+  font-size:16px;
+  opacity: 0.8;
+  margin:0;
+  border-radius: 6px;
+  min-width: 200px;
+}
+#menu ul li {
+  padding: 10px 20px;
+}
+#j1 {
+  background:transparent;
+  padding-bottom:0;
+  margin-bottom:0;
+}
+.carousel h3 {
+  color:white!important;
+}
+.carousel,
+.item,
+.active {
+  max-height: 100%;
+}
+.carousel-inner {
+  max-height: 100%;
+}
+#home .jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotronContentContainer {
+  margin:0;
+}
+.jumbotronContentContainer h1, .jumbotronContentContainer h3 {
+  font-family: 'Lato',sans-serif;
+  color: #bbb;
+}
+#j2 {
+  text-align: right;
+}
+#j3 h3 {
+  text-align:center;
+}
+#j3 p {
+  /*text-align: justify;*/
+  color:#eee;
+}
+#j4 .row, #j3 .row {
+  margin: 70px 0;
+}
+#j4 .carousel-indicators li {
+  border:1px solid #bbb;
+}
+#j4 .carousel-indicators > .active {
+  background: #bbb;
+}
+#maisServicos a {
+  text-decoration: none;
+  color:#333;
+}
+#maisServicos i {
+  background:#eee;
+  padding:20px 28px;
+  border-radius:50%;
+  opacity: 0.5;
+}
+#maisServicos:hover i {
+  opacity: 1.0;
+}
+#j5 h1 {
+  color:white;
+}
+#j5 .row {
+  margin: 50px 0;
+}
+#j5 h2 {
+  position:absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  top:10%;
+  z-index:1;
+  color:#003D71;
+  opacity: 0.8;
+  font-weight: bold;
+  font-family: 'Quicksand',sans-serif;
+}
+#j5 iframe {
+  height:80vh;
+  width:99vw;
+  position:absolute;
+  bottom:0;
+  right:0;
+  z-index:0;
 }
