@@ -11,7 +11,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <title> Obras Executadas e em Execução</title>
+  <title> FAAB Eng | Obras Executadas &amp; em Execução</title>
 
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300|Lato" rel="stylesheet">
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type='text/css'>
 </head>
-<body id="sobre">
+<body id="obras">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container container-fluid">
       <div class="navbar-header">
@@ -35,11 +35,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a id="logoSymbol" href="#" class="navbar-brand"><img src="images/LOGOsymbol.png" style="max-height:30px;"/></a>
+        <a id="logoSymbol" href="index.html" class="navbar-brand"><img src="images/LOGOsymbol.png" style="max-height:30px;"/></a>
         <div id="navLogo" class="container container-fluid">
           <div class="row vcenter">
             <div class="col-xs-1 col-sm-1">
-              <a href="#"><img src="images/LOGO.png" class="img-responsive"></a>
+              <a href="index.html"><img src="images/LOGO.png" class="img-responsive"></a>
             </div>
             <div class="col-xs-6 col-sm-6">
             </div>
@@ -67,7 +67,15 @@
               <li><a href="#executadas">EXECUTADAS</a></li>
             </ul>
           </li>
-          <li><a href="portfolio.html">PORTFÓLIO</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="portfolio.html">PORTFÓLIO <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio.html#projetos">PROJETOS</a></li>
+              <li><a href="portfolio.html#obrasEletricas">OBRAS ELÉTRICAS</a></li>
+              <li><a href="portfolio.html#construcaoCivil">CONSTRUÇÃO CIVIL E INDUSTRIAL</a></li>
+              <li><a href="portfolio.html#locacaoEquipamentos">LOCAÇÃO DE EQUIPAMENTOS</a></li>
+            </ul>
+          </li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONTATO <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -79,20 +87,256 @@
       </div>
     </div>
   </nav>
-  <div id="emExecucao" class="jumbotron topJ" style="height:100vh; background:transparent;">
-    <div class="jumbotronContentContainer">
+  <div id="emExecucao" class="jumbotron" style="background:transparent;">
+    <div class="container" style="padding-top:140px;">
       <h1>Obras em Execução</h1>
+      <hr style="border:transparent;">
+      <div class="row">
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Jaboatão, PE</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy</p>
+        </div>
+        <div role="button" data-toggle="modal" data-target="#varzeaModal" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Várzea</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy</p>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="varzeaModal" tabindex="-1" role="dialog" aria-labelledby="afogadosModalLabel">
+          <div class="modal-dialog modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="afogadosModalLabel"><i class="fa fa-map-marker"></i> Obra em Várzea, Recife</h4>
+              </div>
+              <div class="modal-body">
+                <div id="varzeaCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#varzeaCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#varzeaCarousel" data-slide-to="1"></li>
+                    <li data-target="#varzeaCarousel" data-slide-to="2"></li>
+                    <li data-target="#varzeaCarousel" data-slide-to="3"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Construction_work_at_Douglas_Dam.jpg" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 01</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 01.</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/London_olympic_stadium_construction_-_May_2009.jpg" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 02</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 02.</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Flats_under_construction_in_Moss_Side.jpg" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 03</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 03.</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Halifax_Convention_Centre_Construction_(21875450856).jpg/1024px-Halifax_Convention_Centre_Construction_(21875450856).jpg" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 04</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 04.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#varzeaCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#varzeaCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Piedade, PE</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy</p>
+        </div>
+      </div>
+      <div id="maisEmExec" class="row">
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Olinda, PE</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy</p>
+        </div>
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Pina</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy</p>
+        </div>
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra na Estr. da Mumbeca</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <h2 class="text-center" data-toggle="tooltip" data-placement="top" title="Carregar Mais"><i id="maisEmExecBtn" class="fa fa-plus btn-lg" role="button"></i></h2>
+        </div>
+      </div>
     </div>
   </div>
-  <div id="executadas" class="jumbotron" style="height:100vh; background:transparent;">
-    <div class="jumbotronContentContainer">
-      <h1>Obras Executadas</h1>
+  <div id="executadas" class="jumbotron" style="background:#23425b;">
+    <div class="container" style="padding-top:78px;">
+      <h1>Obras executadas</h1>
+      <hr style="border:transparent;">
+      <div class="row">
+        <div role="button" data-toggle="modal" data-target="#afogadosModal" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Afogados</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy &middot; dd/mm/yyyy</p>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="afogadosModal" tabindex="-1" role="dialog" aria-labelledby="afogadosModalLabel">
+          <div class="modal-dialog modal-dialog-center" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="afogadosModalLabel"><i class="fa fa-map-marker"></i> Obra em Afogados, Recife</h4>
+              </div>
+              <div class="modal-body">
+                <div id="afogadosCarousel" class="carousel slide" data-ride="carousel">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#afogadosCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#afogadosCarousel" data-slide-to="1"></li>
+                    <li data-target="#afogadosCarousel" data-slide-to="2"></li>
+                    <li data-target="#afogadosCarousel" data-slide-to="3"></li>
+                  </ol>
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ec/The_crane_and_the_Main_Street_midrise_on_the_Infinity_(300_Spear_Street)_construction_site,_SF.JPG" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 01</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 01.</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Construction_Workers.jpg" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 02</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 02.</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Federal_Building_construction.jpg" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 03</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 03.</p>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Giginski-monastery-construction-works-1.jpg" alt="">
+                      <div class="carousel-caption">
+                        <h3>Título Imagem 04</h3>
+                        <p>Pequeno texto descritivo acerca dos eventos ilustrados na imagem 04.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Left and right controls -->
+                  <a class="left carousel-control" href="#afogadosCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="right carousel-control" href="#afogadosCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Camaragibe, PE</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy &middot; dd/mm/yyyy</p>
+        </div>
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Imbiribeira</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy &middot; dd/mm/yyyy</p>
+        </div>
+      </div>
+      <div id="maisExec" class="row">
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Boa Viagem</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy &middot; dd/mm/yyyy</p>
+        </div>
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra em Ibura</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy &middot; dd/mm/yyyy</p>
+        </div>
+        <div role="button" class="col-xs-12 col-sm-4">
+          <img src="images/thumbnail.png" class="img-rounded center-block"/>
+          <p class="text-center"><i class="fa fa-map-marker"></i> Obra na Av. Recife</p>
+          <p class="text-center"><i class="fa fa-calendar-o"></i> dd/mm/yyyy &middot; dd/mm/yyyy</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <h2 class="text-center" data-toggle="tooltip" data-placement="top" title="Carregar Mais"><i id="maisExecBtn" class="fa fa-plus btn-lg" role="button"></i></h2>
+        </div>
+      </div>
     </div>
   </div>
+  <footer style="margin:0;">
+    <div class="container">
+      <div class="row vcenter">
+        <div class="col-xs-12 col-sm-3">
+          <h3>INSTITUCIONAL</h3>
+          <p><a href="index.html">INÍCIO</a></p>
+          <p><a href="sobre.html">SOBRE</a></p>
+          <p><a href="#">NOTÍCIAS</a></p>
+          <p><a href="portfolio.html">PORTFÓLIO</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <h3>SERVIÇOS</h3>
+          <p><a href="portfolio.html#projetos">PROJETOS</a></p>
+          <p><a href="portfolio.html#obrasEletricas">OBRAS ELÉTRICAS</a></p>
+          <p><a href="portfolio.html#construcaoCivil">CONSTRUÇÃO CIVIL E INDUSTRIAL</a></p>
+          <p><a href="portfolio.html#locacaoEquipamentos">LOCAÇÃO DE EQUIPAMENTOS</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+          <a href="faleconosco.html"><div class="btn-simple"><p>FALE CONOSCO</p></div></a>
+          <br>
+          <a href="trabalheconosco.html"><div class="btn-simple"><p>TRABALHE CONOSCO</p></div></a>
+          <br>
+          <p style="opacity:0.85;"><small>&copy; Copyright 2017 <a href="cafeamanda.com.br">Café</a>. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- Scripts -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="scripts/snap.js"></script>
   <script src="scripts/main.js"></script>
   <script src="bower_components/scrollsnap-polyfill-develop/dist/scrollsnap-polyfill.bundled.js"></script>
 </body>

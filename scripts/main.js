@@ -3,7 +3,7 @@ $(document).ready(function() {
   $('.carousel').carousel({
      interval: 4000,
      cycle: true
-   })
+   });
 
   $('#logoSymbol').hide();
 
@@ -71,4 +71,54 @@ $(document).ready(function() {
       scrollTop: $('#j5').offset().top
     }, 500);
   });
+
+  $('footer p').unbind('mouseenter mouseleave');
+  $('footer p').on('mouseenter', function() {
+      $(this).stop().animate({
+        paddingLeft:5
+      }, 100);
+  });
+  $('footer p').on('mouseleave', function() {
+    $(this).stop().animate({
+      paddingLeft:0
+    }, 100);
+  });
+
+  $('.chamada').unbind('mouseenter mouseleave');
+  $('.chamada').on('mouseenter', function() {
+      $(this).stop().animate({
+        paddingLeft:40
+      }, 100);
+  });
+  $('.chamada').on('mouseleave', function() {
+    $(this).stop().animate({
+      paddingLeft:0
+    }, 100);
+  });
+
+  $('#maisExec').hide();
+  $('#maisEmExec').hide();
+
+  $('#maisEmExecBtn').on('click', function() {
+    if ($(this).hasClass('fa-plus')==true) {
+      $(this).removeClass('fa-plus').addClass('fa-minus');
+      $('#maisEmExec').show(200);
+    }
+    else {
+      $(this).removeClass('fa-minus').addClass('fa-plus');
+      $('#maisEmExec').hide(200);
+    }
+  });
+
+  $('#maisExecBtn').on('click', function() {
+    if ($(this).hasClass('fa-plus')==true) {
+      $(this).removeClass('fa-plus').addClass('fa-minus');
+      $('#maisExec').show(200);
+    }
+    else {
+      $(this).removeClass('fa-minus').addClass('fa-plus');
+      $('#maisExec').hide(200);
+    }
+  });
+
 });

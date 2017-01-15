@@ -11,7 +11,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <title> Sobre a FAAB</title>
+  <title>FAAB Eng | Trabalhe Conosco</title>
 
   <!-- Fontes -->
   <link href="https://fonts.googleapis.com/css?family=Quicksand:300|Lato" rel="stylesheet">
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="styles/main.css">
   <link href="bower_components/animate.css/animate.min.css" rel="stylesheet" type='text/css'>
 </head>
-<body id="sobre">
+<body id="trabalheConosco">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container container-fluid">
       <div class="navbar-header">
@@ -35,11 +35,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a id="logoSymbol" href="#" class="navbar-brand"><img src="images/LOGOsymbol.png" style="max-height:30px;"/></a>
+        <a id="logoSymbol" href="index.html" class="navbar-brand"><img src="images/LOGOsymbol.png" style="max-height:30px;"/></a>
         <div id="navLogo" class="container container-fluid">
           <div class="row vcenter">
             <div class="col-xs-1 col-sm-1">
-              <a href="#"><img src="images/LOGO.png" class="img-responsive"></a>
+              <a href="index.html"><img src="images/LOGO.png" class="img-responsive"></a>
             </div>
             <div class="col-xs-6 col-sm-6">
             </div>
@@ -67,7 +67,15 @@
               <li><a href="obras.html#executadas">EXECUTADAS</a></li>
             </ul>
           </li>
-          <li><a href="portfolio.html">PORTFÓLIO</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="portfolio.html">PORTFÓLIO <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="portfolio.html#projetos">PROJETOS</a></li>
+              <li><a href="portfolio.html#obrasEletricas">OBRAS ELÉTRICAS</a></li>
+              <li><a href="portfolio.html#construcaoCivil">CONSTRUÇÃO CIVIL E INDUSTRIAL</a></li>
+              <li><a href="portfolio.html#locacaoEquipamentos">LOCAÇÃO DE EQUIPAMENTOS</a></li>
+            </ul>
+          </li>
           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">CONTATO <span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -79,13 +87,135 @@
       </div>
     </div>
   </nav>
-  <div class="jumbotron topJ" style="height:100vh; background:transparent;">
-    <h1>TRABALHE CONOSCO</h1>
+  <div class="sliderUpPage slide-page">
+    <div class="container" style="padding-top:180px;padding-bottom:100px;">
+      <div class="row">
+        <h1 class="text-center"><i class="fa fa-building-o"></i>&ensp;TRABALHE CONOSCO</h1>
+      </div>
+      <hr><br><br>
+      <p class="text-center"><i class="fa fa-envelope"></i>&emsp;curriculo@faab.com.br</p>
+      <br><br>
+      <div class="row">
+        <div class="col-xs-12 col-sm-10">
+          <form id="formTrabalheConosco" action="" method="POST" class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="nomeCompleto" class="col-xs-12 col-sm-3 control-label">
+                Nome Completo&ast;
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Digite o seu nome completo" class="form-control" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email" class="col-xs-12 col-sm-3 control-label">
+                E-mail&ast;
+              </label>
+              <div class="col-xs-12 col-sm-4">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                  <input type="email" id="email" name="_replyto" placeholder="username@email.com" class="form-control" required="">
+                </div>
+              </div>
+              <label for="tel" class="col-xs-12 col-sm-1 control-label">
+                Telefone&ast;
+              </label>
+              <div class="col-xs-12 col-sm-4">
+                <input type="tel" id="tel" name="tel" placeholder="(55) 55555-5555" class="form-control" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="endereco" class="col-xs-12 col-sm-3 control-label">
+                Endereço&ast;
+              </label>
+              <div class="col-xs-12 col-sm-7">
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, avenida, travessa, alamedam, etc." class="form-control" required="">
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <input type="text" id="numero" name="numero" placeholder="n˚" class="form-control" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12 col-sm-4 col-sm-offset-3">
+                <input type="text" id="complemento" name="complemento" placeholder="Complemento (apto, bloco, etc.)" class="form-control">
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <input type="text" id="CEP" name="CEP" placeholder="CEP" class="form-control" required="">
+              </div>
+              <div class="col-xs-12 col-sm-2">
+                <input type="text" id="cidade" name="cidade" placeholder="Cidade" class="form-control" required="">
+              </div>
+              <div class="col-xs-12 col-sm-1">
+                <input type="text" id="Estado" name="Estado" placeholder="UF" class="form-control" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="linksRelevantes" class="col-xs-12 col-sm-3 control-label">
+                Links relevantes
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-globe fa-fw"></i></span>
+                  <input type="text" id="linksRelevantes" name="linksRelevantes" placeholder="Website, LinkedIn, etc." class="form-control" required="">
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="curriculo" class="col-xs-12 col-sm-3 control-label">
+                Currículo&ast;
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <input id="curriculo" type="file" name="curriculo" required="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensagem" class="col-xs-12 col-sm-3 control-label">
+                Mensagem&ast;
+              </label>
+              <div class="col-xs-12 col-sm-9">
+                <textarea name="mensagem" class="form-control" placeholder="Conte-nos um pouco sobre você..." required="" rows="6"></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="col-xs-12 col-sm-2 col-sm-offset-10">
+                <button type="submit" class="btn btn-lg btn-primary">Enviar</button>
+              </div>
+            </div>
+          </form>
+          <p class="text-right"><em>* Os campos marcados por asterisco <strong>(&ast;)</strong> são obrigatórios.</em></p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row vcenter">
+          <div class="col-xs-12 col-sm-3">
+            <h3>INSTITUCIONAL</h3>
+            <p><a href="index.html">INÍCIO</a></p>
+            <p><a href="sobre.html">SOBRE</a></p>
+            <p><a href="noticias.html">NOTÍCIAS</a></p>
+            <p><a href="portfolio.html">PORTFÓLIO</a></p>
+          </div>
+          <div class="col-xs-12 col-sm-3">
+            <h3>SERVIÇOS</h3>
+            <p><a href="portfolio.html#projetos">PROJETOS</a></p>
+            <p><a href="portfolio.html#obrasEletricas">OBRAS ELÉTRICAS</a></p>
+            <p><a href="portfolio.html#construcaoCivil">CONSTRUÇÃO CIVIL E INDUSTRIAL</a></p>
+            <p><a href="portfolio.html#locacaoEquipamentos">LOCAÇÃO DE EQUIPAMENTOS</a></p>
+          </div>
+          <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+            <a href="faleconosco.html"><div class="btn-simple"><p>FALE CONOSCO</p></div></a>
+            <br>
+            <a href="trabalheconosco.html"><div class="btn-simple"><p>TRABALHE CONOSCO</p></div></a>
+            <br>
+            <p style="opacity:0.85;"><small>&copy; Copyright 2017 <a href="cafeamanda.com.br">Café</a>. All Rights Reserved.</small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
   <!-- Scripts -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="scripts/snap.js"></script>
   <script src="scripts/main.js"></script>
   <script src="bower_components/scrollsnap-polyfill-develop/dist/scrollsnap-polyfill.bundled.js"></script>
 </body>
