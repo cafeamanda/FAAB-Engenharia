@@ -7,7 +7,7 @@
   <!-- As 3 tags meta acima *DEVEM* vir primeiro na head; -->
   <meta name="description" content="...">
   <meta name="keywords" content="...">
-  <meta name="author" content="Amanda Café @ cafeamanda.com.br">
+  <meta name="author" content="Amanda Café @ http://cafeamanda.com.br">
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -35,16 +35,22 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a id="logoSymbol" href="#" class="navbar-brand"><img src="images/LOGOsymbol.png" style="max-height:30px;"/></a>
+        <a id="logoSymbol" href="#" class="navbar-brand">
+          <img src="images/LOGOsymbol.png"/>
+        </a>
         <div id="navLogo" class="container container-fluid">
           <div class="row vcenter">
             <div class="col-xs-1 col-sm-1">
-              <a href="#"><img src="images/LOGO.png" class="img-responsive"></a>
+              <a href="index.html"><img src="images/LOGO.png" class="img-responsive"></a>
             </div>
             <div class="col-xs-6 col-sm-6">
             </div>
             <div class="col-xs-5 col-sm-5">
-              <p class="text-right" style="color:#32336b;"><small><strong style="font-family:'Quicksand', sans-serif;">Tradição, Pontualidade e Qualidade.</strong><br>tel. (81) 3471.3523</small></p>
+              <p class="text-right"><small>
+                <strong>Tradição, Pontualidade e Qualidade.</strong>
+                <br>
+                tel. (81) 3471.3523
+              </small></p>
             </div>
           </div>
         </div>
@@ -88,7 +94,7 @@
     </div>
   </nav>
   <div id="j1" class="jumbotron">
-    <div class="jumbotronContentContainer">
+    <div class="jumbotron-container">
       <div id="inicioCarousel" class="carousel slide" data-ride="carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
@@ -123,87 +129,101 @@
       </div>
     </div>
   </div>
-  <div id="j2" class="jumbotron" style="background:transparent;">
-    <div class="container container-fluid jumbotronContentContainer">
-      <h1 class="text-center">Nossos Serviços</h1>
+  <div id="j2" class="jumbotron text-right">
+    <div class="container container-fluid jumbotron-container">
+      <h1 class="text-center">
+        <a href="portfolio.html">Nossos Serviços</a>
+      </h1>
       <div class="row vcenter">
-        <div class="col-xs-12 col-sm-3">
-          <h1><i class="fa fa-pencil-square-o"></i></h1>
-          <h3>Projetos</h3>
-          <p>Civis e Montagem Eletromecânica de Subestações até 230kV</p>
-          <p>Linhas de Transmissão até 230kV</p>
+        <div class="col-xs-12 col-sm-3 zoom-text">
+          <a href="portfolio.html#projetos">
+            <h1><i class="fa fa-pencil-square-o"></i></h1>
+            <h3>Projetos</h3>
+            <p>Civis e Montagem Eletromecânica de Subestações até 230kV</p>
+            <p>Linhas de Transmissão até 230kV</p>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-3 zoom-text">
+          <a href="portfolio.html#obrasEletricas">
+            <h1><i class="fa fa-plug"></i></h1>
+            <h3>Obras Elétricas</h3>
+            <p>Redes Elétricas de Distribuição</p>
+            <p>Redes Elétricas Subterrâneas até 69kV</p>
+            <p></p>
+          </a>
+        </div>
+        <div class="col-xs-12 col-sm-3 zoom-text">
+          <a href="portfolio.html#construcaoCivil">
+            <h1><i class="fa fa-home"></i></h1>
+            <h3>Construção Civil &amp; Industrial</h3>
+            <p>Construção, Incorporação e Reforma</p>
+            <p>Terraplenagem e Pavimentação</p>
+          </a>
         </div>
         <div class="col-xs-12 col-sm-3">
-          <h1><i class="fa fa-plug"></i></h1>
-          <h3>Obras Elétricas</h3>
-          <p>Redes Elétricas de Distribuição</p>
-          <p>Redes Elétricas Subterrâneas até 69kV</p>
-          <p></p>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <h1><i class="fa fa-home"></i></h1>
-          <h3>Construção Civil &amp; Industrial</h3>
-          <p>Construção, Incorporação e Reforma</p>
-          <p>Terraplenagem e Pavimentação</p>
-        </div>
-        <div class="col-xs-12 col-sm-3">
-          <h1 id="maisServicos" class="text-center"><a href="portfolio.html" data-toggle="tooltip" data-placement="top" title="Outros serviços"><i class="fa fa-ellipsis-h"></i></a></h1>
+          <h1 class="btn-outros text-center"><a href="portfolio.html" data-toggle="tooltip" data-placement="top" title="Outros serviços"><i class="fa fa-ellipsis-h"></i></a></h1>
         </div>
       </div>
     </div>
   </div>
-  <div id="j3" class="jumbotron" style="background:#003D71;">
-    <div class="container container-fluid jumbotronContentContainer">
-      <h1 style="color:white;" class="text-left">Últimas Notícias</h1>
-        <div id="newsCarousel" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="item active">
-              <div class="row">
-                <div class="col-sm-4 col-xs-4">
-                  <a href="noticias/noticia01.html">
-                    <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
-                    <h3>Título Notícia 1</h3>
-                    <p>Mauris vestibulum fringilla lectus, quis malesuada diam facilisis nec. Nullam convallis sit amet ante ut efficitur. Ut quis sollicitudin libero.</p>
+  <div id="j3" class="jumbotron">
+    <div class="container container-fluid jumbotron-container">
+      <h1 class="text-left">
+        <a href="noticias.html">Últimas Notícias</a>
+      </h1>
+      <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="row">
+              <div class="col-sm-4 col-xs-4 zoom-text">
+                <a href="noticias/noticia01.html">
+                  <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
+                  <h3>Título Notícia 1</h3>
+                  <p>Mauris vestibulum fringilla lectus, quis malesuada diam facilisis nec. Nullam convallis sit amet ante ut efficitur. Ut quis sollicitudin libero.</p>
+                </a>
+              </div>
+              <div class="col-sm-4 col-xs-4 zoom-text">
+                <a href="noticias/noticia01.html">
+                  <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
+                  <h3>Título Notícia 2</h3>
+                  <p>Vestibulum gravida ante sit amet ante lacinia, in luctus augue finibus. Aliquam sit amet felis vel ex ullamcorper pretium vel.</p>
+                </a>
+              </div>
+              <div class="col-sm-4 col-xs-4 zoom-text">
+                <a href="noticias/noticia01.html">
+                  <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
+                  <h3>Título Notícia 3</h3>
+                  <p>Sed varius non odio et laoreet. Nunc tincidunt lectus sit amet ipsum eleifend suscipit. Integer accumsan, elit ut mollis tincidunt.</p>
+                </a>
+              </div>
+            </div><!--/row-->
+          </div><!--/item-->
+          <div class="item">
+            <div class="row vcenter">
+              <div class="col-sm-4 col-xs-4 zoom-text">
+                <a href="noticias/noticia01.html">
+                  <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
+                  <h3>Título Notícia 4</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque semper lacus et aliquam placerat. Duis.</p>
+                </a>
+              </div>
+              <div class="col-sm-4 col-xs-4 zoom-text">
+                <a href="noticias/noticia01.html">
+                  <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
+                  <h3>Título Notícia 5</h3>
+                  <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras luctus sagittis orci vel interdum. Donec accumsan diam bibendum.</p>
+                </a>
+              </div>
+              <div class="col-sm-4 col-xs-4">
+                <h1 class="text-center btn-outros">
+                  <a href="noticias.html" data-toggle="tooltip" data-placement="top" title="Mais notícias">
+                    <i class="fa fa-ellipsis-h"></i>
                   </a>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                  <a href="noticias/noticia01.html">
-                    <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
-                    <h3>Título Notícia 2</h3>
-                    <p>Vestibulum gravida ante sit amet ante lacinia, in luctus augue finibus. Aliquam sit amet felis vel ex ullamcorper pretium vel.</p>
-                  </a>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                  <a href="noticias/noticia01.html">
-                    <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
-                    <h3>Título Notícia 3</h3>
-                    <p>Sed varius non odio et laoreet. Nunc tincidunt lectus sit amet ipsum eleifend suscipit. Integer accumsan, elit ut mollis tincidunt.</p>
-                  </a>
-                </div>
-              </div><!--/row-->
-            </div><!--/item-->
-            <div class="item">
-              <div class="row vcenter">
-                <div class="col-sm-4 col-xs-4">
-                  <a href="noticias/noticia01.html">
-                    <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
-                    <h3>Título Notícia 4</h3>
-                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque semper lacus et aliquam placerat. Duis.</p>
-                  </a>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                  <a href="noticias/noticia01.html">
-                    <img class="img-responsive img-circle center-block" src="images/thumbnail.png"/>
-                    <h3>Título Notícia 5</h3>
-                    <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras luctus sagittis orci vel interdum. Donec accumsan diam bibendum.</p>
-                  </a>
-                </div>
-                <div class="col-sm-4 col-xs-4">
-                  <h1 class="text-center"><a href="noticias.html" data-toggle="tooltip" data-placement="top" title="Mais notícias"><i class="fa fa-plus" style="padding:20px 28px;background:white;color:#bbb;border-radius:50%;"></i></a></h1>
-                </div>
-              </div><!--/row-->
-            </div><!--/item-->
-          </div><!--/carousel-inner-->
+                </h1>
+              </div>
+            </div><!--/row-->
+          </div><!--/item-->
+        </div><!--/carousel-inner-->
           <!-- Indicators -->
         <ol class="carousel-indicators">
           <li data-target="#newsCarousel" data-slide-to="0" class="active"></li>
@@ -212,8 +232,8 @@
       </div>
     </div>
   </div>
-  <div id="j4" class="jumbotron" style="background:transparent;">
-    <div class="container container-fluid jumbotronContentContainer">
+  <div id="j4" class="jumbotron">
+    <div class="container container-fluid jumbotron-container">
       <h1 class="text-center">Clientes &amp; Amigos</h1>
       <div id="logoCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -308,17 +328,45 @@
       </div>
     </div>
   </div>
-  <div id="j5" class="jumbotron" style="background:transparent;">
-    <div class="jumbotronContentContainer">
-      <h2><i class="fa fa-map-marker"></i> Onde Estamos</h2>
+  <div id="j5" class="jumbotron">
+    <div class="jumbotron-container">
+      <h2><a href="faleconosco.html">
+        <i class="fa fa-map-marker"></i> Onde Estamos</a></h2>
       <div class="container container-fluid">
         <div class="row">
-            <iframe class="center-block" frameborder="0" style="border:0;" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2bN_jPseqwcRn47a3zK31as&key=AIzaSyDmgdde-Toc3GCVZtybU42t9yFs0cEsTFo" allowfullscreen></iframe>
+            <iframe class="center-block" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ2bN_jPseqwcRn47a3zK31as&key=AIzaSyDmgdde-Toc3GCVZtybU42t9yFs0cEsTFo" allowfullscreen></iframe>
             </iframe>
         </div>
       </div>
     </div>
   </div>
+  <footer>
+    <div class="container">
+      <div class="row vcenter">
+        <div class="col-xs-12 col-sm-3">
+          <h3>INSTITUCIONAL</h3>
+          <p><a href="index.html">INÍCIO</a></p>
+          <p><a href="#">SOBRE</a></p>
+          <p><a href="noticias.html">NOTÍCIAS</a></p>
+          <p><a href="portfolio.html">PORTFÓLIO</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-3">
+          <h3>SERVIÇOS</h3>
+          <p><a href="portfolio.html#projetos">PROJETOS</a></p>
+          <p><a href="portfolio.html#obrasEletricas">OBRAS ELÉTRICAS</a></p>
+          <p><a href="portfolio.html#construcaoCivil">CONSTRUÇÃO CIVIL E INDUSTRIAL</a></p>
+          <p><a href="portfolio.html#locacaoEquipamentos">LOCAÇÃO DE EQUIPAMENTOS</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-3 col-sm-offset-3">
+          <a href="faleconosco.html"><div class="btn-simple"><p>FALE CONOSCO</p></div></a>
+          <br>
+          <a href="trabalheconosco.html"><div class="btn-simple"><p>TRABALHE CONOSCO</p></div></a>
+          <br>
+          <p class="copyright"><small>&copy; Copyright 2017 <a href="http://cafeamanda.com.br">Café</a>. All Rights Reserved.</small></p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <div id="menuWrapper">
     <div id="menuIconWrapper"><i id="menuIcon" class="fa fa-plus showMenu" role="button"></i></div>
     <div id="menu" class="showMenu">
@@ -328,10 +376,10 @@
         <li id="noticias" role="button">Últimas Notícias</li>
         <li id="clientes" role="button">Nossos Clientes</li>
         <li id="mapa" role="button">Onde Estamos</li>
+        <li id="rodape" role="button">Rodapé</li>
       </ul>
     </div>
   </div>
-
   <!-- Scripts -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

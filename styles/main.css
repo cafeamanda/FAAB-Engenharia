@@ -1,23 +1,89 @@
-.vcenter {
-  display:flex;
-  align-items: center;
+/**
+*   @author Amanda Café <contato@cafeamanda.com.br>
+*   @description CSS custom stylesheet for FAAB Engenharia's website.
+*
+*   Selectors are separated in 3 groups: 'global tags', 'global classes' & 'styles by page'.
+*   'Global tags' & 'global classes' selectors have been organized in alphabetical order.
+*   ID selectors have been organized by page at section 'Styles by page'.
+**/
+
+/**
+*   global tags
+**/
+a {
+  text-decoration: none!important;
 }
-.navbar {
-  background: white;
-  border:0;
-  padding-top:10px;
+a:focus {
+  color: black!important;
 }
-.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
-  text-shadow: 0 0 0;
-  color: #32336b;
+footer {
+  margin-top:96px;
+  padding-top:48px;
+  padding-bottom:48px;
+  background:#003D71;
+  color:white;
   font-family: 'Lato', sans-serif;
+  opacity: 0.8;
 }
-.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover {
-  color: #32336b;
+footer a {
+  color: inherit;
+}
+footer a:hover {
+  opacity: 1.0;
+  color:floralwhite;
   font-weight: bold;
 }
+h1 {
+  font-family: 'Lato', sans-serif;
+}
+
+/**
+*   global classes
+**/
+.active,
+.carousel,
+.carousel-inner,
+.item {
+  max-height: 100%;
+}
+.btn-simple {
+  border:1px solid white;
+  border-radius: 6px;
+  background:transparent;
+  opacity: 0.85;
+  text-align: center;
+  color:white;
+}
+.btn-simple:hover {
+  color: #003D71;
+  background:white;
+  font-weight: bold;
+  opacity: 1.0;
+}
+.btn-simple p {
+  margin-top:10px;
+  margin-bottom:10px;
+  font-size: 14px;
+}
+.btn-outros i {
+  background:#f6f6f6;
+  color:#989898;
+  padding:20px 28px;
+  border-radius:50%;
+}
+.btn-outros:hover i {
+  background:#eee;
+  color:#333;
+}
+.container-content {
+  padding-top:180px;
+  padding-bottom:100px;
+}
+.copyright {
+  opacity:0.85;
+}
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 .dropdown-menu {
   background: #32336b;
@@ -28,6 +94,28 @@
 }
 .dropdown-menu li a {
   color:white;
+}
+.header-divider {
+  background: #dedede;
+  border: 0 none;
+  display: block;
+  height: 2px;
+  width: 100%;
+}
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.jumbotron-container {
+  margin:0;
+}
+.jumbotron-container a {
+  color:inherit;
+}
+.jumbotron-container h1, .jumbotron-container h3 {
+  font-family: 'Lato',sans-serif;
+  color: #bbb;
 }
 .modal-dialog-center {
   margin-top: 0;
@@ -43,208 +131,19 @@
 .modal.in .modal-dialog-center {
   transform: translate(0, 0);
 }
-#home .jumbotron,
-#sobreContent .jumbotron,
-#portfolioContent .jumbotron {
-  height: 100vh;
-  margin-bottom:0;
+.navbar {
+  background: white;
+  border:0;
+  padding-top:10px;
 }
-#home .jumbotron {
-  position:relative;
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {
+  text-shadow: 0 0 0;
+  color: #32336b;
+  font-family: 'Lato', sans-serif;
 }
-#home .jumbotron .text-bottom {
-  position: absolute;
-  right:1%;
-  bottom:0;
-}
-#home .jumbotron .text-top {
-  position: absolute;
-  right:1%;
-  top:1%;
-}
-#menuWrapper {
-  position: fixed;
-  bottom:8.5%;
-  right:8.5%;
-}
-#menuIconWrapper {
-  padding:6px 12.5px;
-  border-radius: 6px;
-  background:#eee;
-  color:#32336b;
-  font-size: 22px;
-  opacity:0.5;
-}
-#menu {
-  display:none;
-  position: absolute;
-  bottom:100%;
-  right:0;
-}
-#menu ul {
-  color:#32336b;
-  background: #eee;
-  font-size:16px;
-  opacity: 0.8;
-  margin:0;
-  border-radius: 6px;
-  min-width: 200px;
-}
-#menu ul li {
-  padding: 10px 20px;
-}
-#home #j1 {
-  background:transparent;
-  padding-bottom:0;
-  margin-bottom:0;
-}
-#newsCarousel h3, #inicioCarousel h3 {
-  color:white !important;
-}
-#newsCarousel a {
-  text-decoration: none;
-}
-.carousel,
-.item,
-.active {
-  max-height: 100%;
-}
-.carousel-inner {
-  max-height: 100%;
-}
-.jumbotron {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.jumbotronContentContainer {
-  margin:0;
-}
-.jumbotronContentContainer h1, .jumbotronContentContainer h3 {
-  font-family: 'Lato',sans-serif;
-  color: #bbb;
-}
-#j2 {
-  text-align: right;
-}
-#j3 h3 {
-  text-align:center;
-}
-#j3 p {
-  /*text-align: justify;*/
-  color:#eee;
-}
-#j4 .row, #j3 .row {
-  margin: 70px 0;
-}
-#j4 .carousel-indicators li {
-  border:1px solid #bbb;
-}
-#j4 .carousel-indicators > .active {
-  background: #bbb;
-}
-#maisServicos a {
-  text-decoration: none;
-  color:#333;
-}
-#maisServicos i {
-  background:#eee;
-  padding:20px 28px;
-  border-radius:50%;
-  opacity: 0.5;
-}
-#maisServicos:hover i {
-  opacity: 1.0;
-}
-#j5 h1 {
-  color:white;
-}
-#j5 .row {
-  margin: 50px 0;
-}
-#j5 h2 {
-  position:absolute;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, 0);
-  top:10%;
-  z-index:1;
-  color:#003D71;
-  opacity: 0.8;
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-nav > li > a:hover {
+  color: #32336b;
   font-weight: bold;
-  font-family: 'Quicksand',sans-serif;
-}
-#j5 iframe {
-  height:80vh;
-  width:99vw;
-  position:absolute;
-  bottom:0;
-  right:0;
-  z-index:0;
-}
-#sobreContent .jumbotron {
-  font-family: 'Oswald', sans-serif;
-  margin-bottom:0;
-}
-#sobreContent .jumbotron p {
-  font-family: 'Lato', sans-serif;
-}
-#noticiasContent h1 {
-  font-family: 'Lato', sans-serif;
-}
-#noticiasContent .chamada {
-  margin-bottom:48px;
-}
-#noticiasContent .chamada p {
-  text-align: justify;
-}
-#noticiasContent a {
-  text-decoration: none;
-  color:inherit;
-}
-#segundaColunaNoticias {
-  border-left:2px solid #333;
-  text-align:center;
-}
-#segundaColunaNoticias h3 {
-  margin-bottom:30px;
-}
-#destaquesCarousel .carousel-indicators li {
-  border:1px solid #333;
-}
-#destaquesCarousel .carousel-indicators > .active {
-  background: #333;
-}
-#destaquesCarousel img {
-  max-height: 150px;
-}
-#obras .row,
-#obras hr {
-  padding-bottom:48px;
-}
-#obras h1 {
-  font-family: 'Lato',sans-serif;
-  color:#444;
-  text-align: center;
-}
-#obras h2 {
-  margin:0;
-}
-#emExecucao h1 {
-  padding-top:50px;
-}
-#maisExecBtn, #maisEmExecBtn {
-  padding:24px 28px;
-  background:lightgrey;
-  color:#333;
-  border-radius:50%;
-}
-.header-divider {
-  background: #dedede;
-  border: 0 none;
-  display: block;
-  height: 2px;
-  width: 100%;
 }
 .noticia-author {
   color:#aaa;
@@ -256,12 +155,6 @@
 .noticia-date {
   font-size:12px;
   color: #ccc;
-}
-.noticia-text {
-  font-size:18px;
-  text-align: justify;
-  padding-top:12px;
-  padding-bottom:12px;
 }
 .noticia-image {
   margin-top:20px;
@@ -284,44 +177,17 @@
   font-size:12px;
   color:#bbb;
 }
-#portfolioContent .jumbotron {
-  background:transparent;
+.noticia-text {
+  font-size:18px;
+  text-align: justify;
+  padding-top:12px;
+  padding-bottom:12px;
 }
-#portfolioContent .jumbotron h1 {
-  padding-top:48px;
-  padding-bottom:48px;
-  text-align: center;
-  font-size:48px;
-  font-family: 'Lato', sans-serif;
-  color:#333;
+.vcenter {
+  display:flex;
+  align-items: center;
 }
-#portfolioContent .jumbotron h2 {
-  text-align: right;
-  font-size:26px;
-  font-family: 'Lato', sans-serif;
-  color:#555;
-}
-#portfolioContent .jumbotron p {
-  text-align: right;
-  font-size: 16px;
-}
-#obrasEletricas,
-#locacaoEquipamentos {
-  background:#003D71!important;
-}
-#obrasEletricas h1, #locacaoEquipamentos h1, #executadas h1,
-#obrasEletricas h2, #locacaoEquipamentos h2, #executadas h2,
-#obrasEletricas p, #locacaoEquipamentos p, #executadas p {
-  color:#fefefe!important;
-  text-shadow: 1px 1px 1px #333;
-}
-#executadas i {
-  text-shadow: 0 0 0;
-}
-#executadas {
-  margin-bottom:0;
-}
-.servico:hover {
+.zoom-text:hover {
   -webkit-transition: all .3s ease;
 	-moz-transition: all .3s ease;
 	-o-transition: all .3s ease;
@@ -335,8 +201,217 @@
   -o-transform:translatZ(0) scale(1.05);
   transform:translatZ(0) scale(1.05);
 }
-#faleConosco h1, #trabalheConosco h1 {
+
+/**
+*   Styles by page
+*
+*   HOME <index.html>
+**/
+#home .jumbotron,
+#sobreContent .jumbotron,
+#portfolioContent .jumbotron {
+  height: 100vh;
+  margin-bottom:0;
+}
+#home .jumbotron {
+  position:relative;
+}
+#inicioCarousel h3,
+#newsCarousel h3 {
+  color:white !important;
+}
+#j1,
+#j2,
+#j4,
+#j5 {
+  background:transparent;
+}
+#j2 .row,
+#j3 .row,
+#j4 .row,
+#j5 .row {
+  margin: 50px 0;
+}
+#j1 {
+  padding-bottom:0;
+  margin-bottom:0;
+}
+#j3 {
+  background:#003D71;
+  margin-top:24px;
+}
+#j3 h1 {color:white;}
+#j3 h3 {text-align:center;}
+#j3 p {color:#eee;}
+#j4 .carousel-indicators li {
+  border:1px solid #bbb;
+}
+#j4 .carousel-indicators > .active {
+  background: #bbb;
+}
+#j5 h1 {color:white;}
+#j5 h2 {
+  position:absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+  top:10%;
+  z-index:1;
+  color:#003D71;
+  opacity: 0.8;
+  font-weight: bold;
+  font-family: 'Quicksand',sans-serif;
+}
+#j5 iframe {
+  border:0;
+  height:80vh;
+  width:99vw;
+  position:absolute;
+  bottom:0;
+  right:0;
+  z-index:0;
+}
+#menu {
+  display:none;
+  position: absolute;
+  bottom:100%;
+  right:0;
+}
+#menu ul {
+  color:#32336b;
+  background: #eee;
+  font-size:16px;
+  opacity: 0.8;
+  margin:0;
+  min-width: 200px;
+}
+#menu ul li {
+  padding: 10px 20px;
+}
+#menuIconWrapper {
+  padding:6px 12.5px;
+  background:#eee;
+  color:#32336b;
+  font-size: 22px;
+  opacity:0.5;
+}
+#menuWrapper {
+  position: fixed;
+  bottom:8.5%;
+  right:8.5%;
+}
+/**
+*   OBRAS <obras.html>
+**/
+#emExecucao {
+  background:transparent;
+}
+#executadas {
+  background:#23425b;
+  margin-bottom:0;
+}
+#executadas i {
+  text-shadow: 0 0 0;
+}
+#maisExecBtn, #maisEmExecBtn {
+  padding:24px 28px;
+}
+#obras footer {
+  margin:0;
+}
+#obras .jumbotron {
+  padding-bottom:0;
+}
+#obras .row {
+  padding-bottom:50px;
+}
+#obras h1 {
+  color:#444;
+  text-align: center;
+  padding:50px 0;
+}
+#obras h2 {
+  margin:0;
+}
+/**
+*   PORTFOLIO <portfolio.html>
+**/
+#obrasEletricas,
+#locacaoEquipamentos {
+  background:#003D71!important;
+}
+#obrasEletricas h1,
+#locacaoEquipamentos h1,
+#executadas h1,
+#obrasEletricas h2,
+#locacaoEquipamentos h2,
+#executadas h2,
+#obrasEletricas p,
+#locacaoEquipamentos p,
+#executadas p {
+  color:#fefefe!important;
+  text-shadow: 1px 1px 1px #333;
+}
+#portfolioContent .jumbotron {
+  background:transparent;
+}
+#portfolioContent .jumbotron h1 {
+  padding-top:48px;
+  padding-bottom:48px;
+  text-align: center;
+  font-size:48px;
+  color:#333;
+}
+#portfolioContent .jumbotron h2 {
+  text-align: right;
+  font-size:26px;
   font-family: 'Lato', sans-serif;
+  color:#555;
+}
+#portfolioContent .jumbotron p {
+  text-align: right;
+  font-size: 16px;
+}
+#portfolio footer,
+#sobre footer,
+#home footer {
+  height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+}
+/**
+*   SOBRE NÓS <sobre.html>
+**/
+#sobre {
+  background-repeat:repeat-y;
+  background-position: bottom;
+}
+#sobre .jumbotron {
+  opacity:0.8;
+  margin-bottom:0;
+}
+#sobre .dark-background {
+  background:#001f33;
+  color:white;
+}
+#sobre .white-background {
+  background:white;
+}
+#sobre .jumbotron h1 {
+  font-family: 'Exo 2', sans-serif;
+}
+#sobre .jumbotron p {
+  font-family: 'PT Sans', sans-serif;
+}
+/**
+*   FALE CONOSCO <faleconosco.html>
+**/
+#faleConosco iframe {
+  border:0;
+  height:200px;
+  width:320px;
 }
 #faleConosco .iframe-container {
     position: relative;
@@ -352,45 +427,50 @@
   width: 100%;
   height: 100%;
 }
-footer {
-  margin-top:96px;
-  padding-top:48px;
-  padding-bottom:48px;
-  background:#003D71;
-  color:white;
-  font-family: 'Lato', sans-serif;
-  opacity: 0.8;
+/**
+*   NOTÍCIAS <noticias.html>
+**/
+#destaquesCarousel .carousel-indicators li {
+  border:1px solid #333;
 }
-footer .btn-simple {
-  border:1px solid white;
-  border-radius: 6px;
-  background:transparent;
-  opacity: 0.85;
-  text-align: center;
-  text-decoration: none;
-  color:white;
+#destaquesCarousel .carousel-indicators > .active {
+  background: #333;
 }
-footer .btn-simple:hover {
-  color: #003D71;
-  background:white;
-  font-weight: bold;
-  opacity: 1.0;
+#destaquesCarousel img {
+  max-height: 150px;
 }
-footer a {
-  text-decoration: none;
-  color: inherit;
+#noticiasContent a {
+  color:inherit;
 }
-footer a:hover {
-  text-decoration: none;
-  opacity: 1.0;
-  color:floralwhite;
-  font-weight: bold;
+#noticiasContent .zoom-text {
+  margin:48px 0;
 }
-footer .btn-simple p {
-  margin-top:10px;
-  margin-bottom:10px;
-  font-size: 14px;
+#noticiasContent .zoom-text p {
+  text-align: justify;
 }
+#segundaColunaNoticias {
+  border-left:2px solid #333;
+  text-align:center;
+  padding-bottom:96px;
+}
+#segundaColunaNoticias h3 {
+  margin-bottom:30px;
+}
+/**
+*   NAVBAR
+**/
+#logoSymbol img {
+  max-height: 30px;
+}
+#navLogo p {
+  color: #32336b;
+}
+#navLogo p strong {
+  font-family: 'Quicksand', sans-serif;
+}
+/**
+*   CSS animations
+**/
 .sliderXl {
     position: relative;
     transform: translateX(-100%);
@@ -498,3 +578,6 @@ footer .btn-simple p {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+/**
+* Media Queries
+**/
