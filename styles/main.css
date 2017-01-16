@@ -14,7 +14,7 @@ a {
   text-decoration: none!important;
 }
 a:focus {
-  color: black!important;
+  color:#777!important;
 }
 footer {
   margin-top:96px;
