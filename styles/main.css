@@ -300,6 +300,9 @@ h1 {
   bottom:8.5%;
   right:8.5%;
 }
+.map iframe{
+  pointer-events: none;
+}
 /**
 *   OBRAS <obras.html>
 **/
