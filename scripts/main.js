@@ -138,5 +138,10 @@ $(document).ready(function() {
       $('#maisExec').hide(200);
     }
   });
+  
+  $('.map').click(function () {
+    $('.map iframe').css("pointer-events", "auto");
+  });
+
 
 });
